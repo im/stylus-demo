@@ -1,0 +1,23 @@
+@import './theme/light/config.styl'
+@import './theme/dark/config.styl'
+
+$themes = {
+    drak: $drak,
+    light: $light,
+}
+
+getAttr(attr, val) 
+    for key, theme in $themes
+        [data-theme = {key}] &
+            {attr} theme[val]
+font-color()
+    for key, theme in $themes
+        [data-theme = {key}] &
+            getAttr()
+             theme.base-color
+background-color()
+    getAttr('background-color', 'base-color')
+
+div
+    h1
+        background-color()
