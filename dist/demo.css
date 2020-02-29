@@ -1,0 +1,6 @@
+[data-theme = default-theme] div h1 {
+  background: #ddd;
+}
+[data-theme = red-theme] div h1 {
+  background: #f00;
+}

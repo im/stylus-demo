@@ -1,0 +1,6 @@
+[data-theme = drak] div h1 {
+  background-color: #ddd;
+}
+[data-theme = light] div h1 {
+  background-color: #f00;
+}
